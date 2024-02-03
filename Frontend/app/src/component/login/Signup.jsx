@@ -8,6 +8,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+    name:"",
     email: "",
     password: "",
   });
@@ -58,7 +59,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('https://user-api-tuau.onrender.com/auth',
+      const response = await axios.post('https://user-api-ulr5.onrender.com/auth',
         formData
       );
 
@@ -67,7 +68,6 @@ const Signup = () => {
       } else {
         const { token } = response.data;
         localStorage.setItem("token", token);
-
         toast.success("Account created");
 
         setTimeout(() => {

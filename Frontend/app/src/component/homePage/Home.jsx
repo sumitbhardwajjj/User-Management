@@ -4,7 +4,7 @@ import '../homePage/Home.css'
 import TaskDataGrid from "../DataTable/DataTable";
 
 const Home = () => {
-  const apiUrl = 'https://user-api-tuau.onrender.com/user';
+  const apiUrl = 'https://user-api-ulr5.onrender.com/user';
   const token = localStorage.getItem('token');
 
   const [users, setUsers] = useState([]);

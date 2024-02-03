@@ -60,7 +60,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://user-api-tuau.onrender.com/auth",
+        "https://user-api-ulr5.onrender.com/auth/login",
         formData
       );
 
