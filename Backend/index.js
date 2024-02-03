@@ -44,8 +44,8 @@ const auth = (req, res, next) => {
 
 
 
-server.use("/user", auth, userRouter.router);
-server.use('/auth',authRouter.router)
+server.use("/user", auth , userRouter.router);
+server.use('/auth', authRouter.router)
 
 server.use((err, req, res, next) => {
   console.error(err.stack);
